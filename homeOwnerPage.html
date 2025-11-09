@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Precision Home Inspections">
+    <meta name="author" content="Christopher Harper">
+    <title>Precision Home Inspections</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="headerNav">
+    <header class="head">
+        <a href="index.html"> 
+            <img class="logo" src="image/logo.jpg"
+                alt="Precision Home Inspections Logo">
+        </a>
+        <h1 class="motto">Proudly Serving Utah's Wasatch Front.</h1>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><span class="menu"></span><a href="#" class="menu-icon navOption2" id="menu-icon" onclick="toggleMenu()"><span></span></a></li>
+            <li><span><a href="index.html" class="active navOption">Home</a></span></li>
+            <li><a href="about.html" class="navOption">About Us</a></li>
+            <li><a href="services.html" class="navOption">Services</a></li>
+            <li><a href="reviews.php" class="navOption">Reviews</a></li>
+            <li><a href="contact.html" class="navOption">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <div class="homeownerIntro">
+        <h1>Home Inspections That Protect You and Your Family</h1>
+        <p>Buying a home is one of the biggest investments you'll ever make. I provide detailed home inspections that give you confidence and peace of mind. With a thorough evaluation of the home's condition, clear reporting, and follow-up support. I help you make an informed decision.</p>
+    </div>
+
+    <div class="homeownerContent">
+        <div class="homeownerContentLeft">
+        <div class="homeownerTrust">
+        <h2>Home Inspection Services</h2>
+        <ul>
+            <li><strong>Buyer's Home Inspection - </strong>Full property evaluation of structure, systems, and safety concerns.</li>
+            <li><strong>Pre-Sale Inspection - </strong>Prepare your home for sale and address issues ahead of listing.</li>
+            <li><strong>New Build & Warranty - </strong>Walk-throughs to identify construction defects. </li>
+            <li><strong>Mold Testing - </strong>Two samples minimum; lab analysis and recommendations.</li>
+            <li><strong>Radon Testing - </strong>At least 48-hour continuous monitoring for accurate results.</li>
+            <li><strong>Water Testing - </strong>Drinking water analysis to protect your families health.</li>
+            <!--<li><strong>Home Maintenance - </strong>Small maintenance tasks and seasonal checks available.</li>-->
+        </ul>
+        </div>
+
+        <h1>Let's make your next closing stress-free.</h1>
+        <a href="contact.html"><button class="realtorButton">Schedule an Inspection</button></a>
+        <a href="Home Inspection Report - Sample.pdf"><button class="realtorReportButton">View Sample Report</button></a>
+
+        <h1></h1>
+        <form class="homeownerForm" action="https://formspree.io/f/myznjeww" method="POST">
+            <h1>Request an Estimate</h1>
+
+            <label for="name">Full Name <span class="requiredStar">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label>
+            <input type="text" id="last_name" name="last_name" class="milo">
+            </label>
+
+            <label for="phone">Phone Number <span class="requiredStar">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="(555)123-4567" required>
+
+            <label for="email">Email Address <span class="requiredStar">*</span></label>
+            <input type="email" id="email" name="email" placeholder="youremail@email.com" required>
+
+            <label for="address">Property Address / MLS# <span class="requiredStar">*</span></label>
+            <input type="text" id="address" name="address" placeholder="123 Main St, City, State" required>
+
+            <label for="service">Service Needed <span class="requiredStar">*</span></label>
+            <select id="service" name="service" required?>
+                <option value="" disabled selected>Select a Service</option>
+                <option value="buyers_home_inspection">Buyer's Home Inspection</option>
+                <option value="pre_sale_inspection">Pre-Sale Inspections</option>
+                <option value="new_build_warranty">New Build & Warranty Inspection</option>
+                <option value="mold_testing">Mold Testing</option>
+                <option value="radon_testing">Radon Testing</option>
+                <option value="water_testing">Water Testing</option>
+                <!--<option value="home_maintenance">Home Maintenance Services</option>-->
+            </select>
+
+            <label for="contact">Preferred Method of Contact <span class="requiredStar">*</span></label>
+            <select id="contact" name="contact" required>
+                <option value="" disabled selected>Select a Method of Contact</option>
+                <option value="Email">Email</option>
+                <option value="Call">Call</option>
+                <option value="Text">Text</option>
+            </select>
+
+            <label for="comments">Additional Comments</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+
+            <button type="submit">Request an Estimate</button>
+        </form>
+        </div>
+        
+
+        <div class="homeownerContentRight">
+            <img src="image/family_1024.jpg" alt="Family">
+            <h2>What to Expect</h2>
+            <ul>
+                <li>Thorough onsite inspection with photos and notes.</li>
+                <li>Clear summary of major issues and safety concerns.</li>
+                <li>Actionable recommendations and cost-saving tips.</li>
+                <li>Detailed PDF report delivered within 24-48 hours.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="homeFooter">
+        <div class="footerContainer">
+        <div class="footerAbout">
+            <h3>Precision Home Inspections</h3>
+            <p>Proudly serving Utah's Wasatch Front with honest, thorough, and reliable home inspections.</p>
+        </div>
+
+
+        <div class="footerContact">
+            <p>Email: <a href="gary@phi-ut.com">gary@phi-ut.com</a></p>
+            <p>Phone: (801) 608-7580</p>
+            <p>Hours: Mon–Sat, 8am–6pm</p>
+        </div>
+
+
+        <div class="footerSocial">
+            <a href="https://www.facebook.com/PrecisionHomeInspectionsUT/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/gary-elkins-451723b/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        </div>
+
+
+        <div class="footerBottom">
+            <p>&copy; <span id="currentYear"></span> | Precision Home Inspections.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

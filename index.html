@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Precision Home Inspections">
+    <meta name="author" content="Christopher Harper">
+    <title>Home | Precision Home Inspections</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="headerNav">
+    <header class="head">
+        <a href="index.html"> 
+            <img class="logo" src="image/logo.jpg"
+                alt="Precision Home Inspections Logo">
+        </a>
+        <h1 class="motto">Proudly Serving Utah's Wasatch Front.</h1>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><span class="menu"></span><a href="#" class="menu-icon navOption2" id="menu-icon" onclick="toggleMenu()"><span></span></a></li>
+            <li><span><a href="index.html" class="active navOption">Home</a></span></li>
+            <li><a href="about.html" class="navOption">About</a></li>
+            <li><a href="services.html" class="navOption">Services</a></li>
+            <li><a href="reviews.php" class="navOption">Reviews</a></li>
+            <li><a href="contact.html" class="navOption">Contact</a></li>
+            <li><a href="admin_login.php" class="navOption">Login</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <div class="imageContainer">
+    <img class="homePage_image" srcset="image/Homepage_House_414.jpg 414w, image/Homepage_House_1024.jpg 1024w, image/Homepage_House_1150.jpg 1150w" sizes="(max-width: 414px) 414px, (max-width: 1024px) 1024px, 1150px" src="image/Homepage_House.jpg" alt="Image of a home.">
+    <div class="imageContent">
+    <h2>Precision Home Inspections</h2>
+    <a href="contact.html"><button class="imageButton">Get Free Estimate</button></a>
+    </div>  
+    </div>
+
+    <video autoplay muted loop playsinline>
+        <source src="video/video-from-rawpixel-id-17270899-sd.mp4" type="video/mp4">
+        Your browser does not support the video tag. 
+    </video>
+
+    <div class="smallCall">
+    <h2 class="companyName">Precision Home Inspections</h2>
+    <a href="contact.html"><button class="imageButton">Get Free Estimate</button></a>
+    </div>
+
+    <div class="homeAbout">
+        <img class="homeBio" src="image/garyHome.jpg" alt="Picture of Owner">
+        <div class="home_bioTextContainer">
+        <p class="home_bioText"><b>Gary Elkins – Owner, Precision Home Inspections</b></p>
+        <p class="home_bioText">With over 20 years of experience in home repair and restoration, I deliver thorough and honest inspections you can trust. I identify issues others might miss, offer affordable pricing, and provide optional testing for mold, radon, asbestos, and more. Flexible scheduling Monday–Saturday ensures I work around you and your realtor.</p>
+        <a  href="about.html" class="homeAboutLink">Learn More</a> 
+    </div>
+    </div>
+
+    <div class="homeServicesContainer">
+    <h1>Home Inspection Services</h1>
+        <div class="realtor_homeownerContainer">
+        <div class="realtorImageBox">
+        <a href="realtorPage.html"><img src="image/RealtorHome.jpg" alt="Realtor Showing a Home"></a>
+        <a href="realtorPage.html"><button class="realtor_homeownerButton">Realtor Services</button></a>
+        </div>
+        <div class="homeownerImageBox">
+        <a href="homeOwnerPage.html"><img src="image/family_1024.jpg" alt="For Sale"></a>
+        <a href="homeOwnerPage.html"><button class="realtor_homeownerButton">Homeowner Services</button></a>
+        </div>
+    </div>
+    </div>
+
+    <div class="homeServices">
+        <div class="homeServicesBox">
+            <div class="homeServicesBoxBlock">
+        <h2>Services</h2>
+        <ul>
+            <li>New Build Inspection</li>
+            <li>Warranty Inspection</li>
+            <li>Mold Testing (2 Samples)</li>
+            <li>Radon Testing (48 Hours)</li>
+            <li>Meth Testing</li>
+            <li>Fentanyl Testing</li>
+            <li>Sewer Scope</li>
+            <li>Water Testing</li>
+            <!--<li>Home Maintenance Services</li>-->
+        </ul>
+        <a  href="services.html" class="homeServicesLink">Learn More</a>
+        </div>
+        </div>
+        <div class="homeServicesBox">
+            <img src="image/Precision Home Inspection Truck.jpg" class="homeTruck" alt="Presicion Home Inspection Truck">
+        </div>
+    </div>
+
+    <footer class="homeFooter">
+        <div class="footerContainer">
+        <div class="footerAbout">
+            <h3>Precision Home Inspections</h3>
+            <p>Proudly serving Utah's Wasatch Front with honest, thorough, and reliable home inspections.</p>
+        </div>
+
+
+        <div class="footerContact">
+            <p>Email: <a href="gary@phi-ut.com">gary@phi-ut.com</a></p>
+            <p>Phone: (801) 608-7580</p>
+            <p>Hours: Mon–Sat, 8am–6pm</p>
+        </div>
+
+
+        <div class="footerSocial">
+            <a href="https://www.facebook.com/PrecisionHomeInspectionsUT/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/gary-elkins-451723b/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        </div>
+
+
+        <div class="footerBottom">
+            <p>&copy; <span id="currentYear"></span> | Precision Home Inspections.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
