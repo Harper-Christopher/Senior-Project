@@ -1,2 +1,13 @@
 .env
 passwordChange.php
+admin_dashboard.php
+admin_login.php
+approve_review.php
+database.php
+delete_review.php
+functions.php
+logout.php
+reviews.php
+submit_adminForm.php
+submit_reviewForm.php
+admin_dashboard2.php
