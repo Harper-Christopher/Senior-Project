@@ -558,14 +558,15 @@ input:focus, textarea:focus, select:focus {
 }
 
 .review_card {
-    background: #e0e8f3;
+    background: rgb(242, 241, 241);
     border-radius: 12px;
     padding: 1.5rem;
-    box-shadow: 0 2px 5px black;
+    box-shadow: 2px 3px 8px black;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     flex: 1 1 300px;
     max-width: 400px;
     color: black;
+    font-weight: 500;
 }
 
 .review_card:hover {
@@ -575,9 +576,9 @@ input:focus, textarea:focus, select:focus {
 
 .review_card h3 {
     margin-bottom: .25rem;
-    font-size: 1.3rem;
-    text-shadow: 2px 2px 5px black;
-    color: white;
+    font-size: 1.8rem;
+    text-shadow: .7px .7px 2px black;
+    color: #307ad9;
 }
 
 .review_card .rating {
@@ -609,11 +610,28 @@ input:focus, textarea:focus, select:focus {
     text-shadow: 2px 2px 4px black;
 }
 
-.homeAdvisorLink a {
-    text-decoration: none;
-    color: #1e2748;
-    text-shadow: 2px 2px 5px #307ad9;
+.home_advisor_button {
+    display: flex;
     justify-content: center;
+}
+
+.homeAdvisorLink {
+    display: inline-block;
+    background: #307ad9;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px black;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px black;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.homeAdvisorLink:hover {
+    background: #245fa7;
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 10px black;
 }
 
 .averageReview {
@@ -832,7 +850,7 @@ input:focus, textarea:focus, select:focus {
     margin-bottom: 1rem;
 }
 
-.actionCall a {
+.actionCall a, .service_call a {
     display: inline-block;
     background: red;
     color: white;
@@ -845,7 +863,7 @@ input:focus, textarea:focus, select:focus {
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.actionCall a:hover {
+.actionCall a:hover, .service_call a:hover {
     background: rgb(211, 0, 0);
     transform: translateY(-3px);
 }
@@ -956,4 +974,67 @@ input:focus, textarea:focus, select:focus {
 
 .loadMore:hover {
   background: #004a8c;
+}
+
+/* Services Page */ 
+.service_section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.service_h2 {
+    text-align: center;
+    margin: 0 0 2rem 0;
+    font-size: 3rem;
+    color: #307ad9;
+    text-shadow: 1px 1px 2px black;
+}
+.service_card {
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px black;
+}
+.service_card h3 {
+    color: #307ad9;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 3px black;
+}
+.service_card p {
+    margin-bottom: 10px;
+}
+.service_card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.service_card ul li {
+    margin-bottom: 5px;
+}
+
+.service_card img {
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+    justify-content: center;
+    margin: 1rem auto;
+    box-shadow: 2px 2px 4px black;
+}
+
+.service_image {
+    height: 300px; 
+    overflow: hidden;
+}
+
+.service_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.service_call {
+    text-align: center;
+    margin: 1rem;
 }
