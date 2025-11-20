@@ -978,37 +978,45 @@ input:focus, textarea:focus, select:focus {
 
 /* Services Page */ 
 .service_section {
-    padding: 60px 20px;
-    max-width: 1000px;
+    padding: 0 20px 20px;
     margin: 0 auto;
+    background: #1e2748;
 }
+
 .service_h2 {
     text-align: center;
     margin: 0 0 2rem 0;
     font-size: 3rem;
-    color: #307ad9;
-    text-shadow: 1px 1px 2px black;
+    color: white;
+    text-shadow: 3px 3px 3px #307ad9;
 }
+
 .service_card {
+    max-width: 1000px;
+    background: white;
     padding: 25px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
     border-radius: 10px;
     box-shadow: 2px 3px 8px black;
 }
+
 .service_card h3 {
     color: #307ad9;
     margin-bottom: 15px;
     font-size: 1.8rem;
     text-shadow: 1px 1px 3px black;
 }
+
 .service_card p {
     margin-bottom: 10px;
 }
+
 .service_card ul {
     list-style-type: disc;
     padding-left: 20px;
     margin-bottom: 10px;
 }
+
 .service_card ul li {
     margin-bottom: 5px;
 }
@@ -1039,3 +1047,35 @@ input:focus, textarea:focus, select:focus {
     margin: 1rem;
 }
 
+.services_link {
+    text-decoration: none;
+    color: #307ad9;
+    font-weight: bold;
+    margin: 1rem 1.8rem;
+    font-size: 1.2rem;
+    line-height: 2.3;
+}
+
+.service_nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.service_nav a {
+    text-decoration: none;
+    color: #1e2748;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 6px;
+    background: #f3f6ff;
+    transition: background 0.2s ease;
+    box-shadow: 3px 3px 5px #307ad9;
+}
+
+.service_nav a:hover {
+    background: #dbe6ff;
+}

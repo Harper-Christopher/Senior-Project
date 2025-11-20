@@ -318,5 +318,13 @@
         font-size: 1.2rem;
     }
 
+    .service_card {
+        font-size: 1.1rem;
+    }
+    
+    .service_card h3 {
+        font-size: 2.1rem;
+    }
+
 
 }   
