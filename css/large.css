@@ -343,6 +343,7 @@
     }
 
     .back_to_top {
+        display: block;
         position: fixed;
         bottom: 20px;
         right: 20px;

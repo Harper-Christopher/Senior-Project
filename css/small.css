@@ -956,7 +956,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .aboutContent h1 .highlight {
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 1px 2px 2px black;
 }
     
 .aboutContent p {
@@ -1124,5 +1124,9 @@ input:focus, textarea:focus, select:focus {
 }
 
 .service_select {
+    display: none;
+}
+
+.back_to_top {
     display: none;
 }
