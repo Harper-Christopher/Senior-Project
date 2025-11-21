@@ -170,6 +170,7 @@ video {
     height: auto;
     display: block;
     margin-bottom: -2px;
+    margin-left: -.5%;
 }
 
 .imageContainer {
