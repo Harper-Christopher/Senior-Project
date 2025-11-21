@@ -236,7 +236,10 @@ video {
         margin: 1rem 0;
         padding: 2rem;
         color: white;
-    
+}
+
+.homeServicesContainer h1 {
+    text-shadow: 3px 3px 3px #307ad9;
 }
 
 .realtorImageBox, .homeownerImageBox {
@@ -306,6 +309,7 @@ video {
     text-decoration: none;
     color: #307ad9;
     font-weight: bold;
+    text-shadow: .7px .7px 1px black;
 }
 
 .homeServicesLink {
@@ -314,6 +318,7 @@ video {
     font-weight: bold;
     font-size: 1rem;
     margin: 1rem 0;
+    text-shadow: .7px .7px 1px black;
 }
 
 .homeServices a:hover {
@@ -345,7 +350,8 @@ video {
 .footerAbout h3 {
     font-size: 1.8rem;
     margin: 1rem;
-    color: #307ad9
+    color: #307ad9;
+    text-shadow: 3px 3px 3px black;
 }
 
 .footerAbout p {
@@ -407,6 +413,10 @@ video {
     font-weight: bold;
 }
 
+.realtorTrust h2, .homeownerTrust h2 {
+    text-shadow: 2px 2px 3px #307ad9;
+}
+
 .realtorContent li, .homeownerContent li {
     padding: .5rem;
 }
@@ -444,6 +454,29 @@ video {
     width: 100%;
     font-size: 1.2rem;
     box-shadow: 2px 2px 10px black;
+}
+
+.sample_pdf, .contact_link {
+    display: inline-block;       
+    width: 100%;                 
+    text-align: center;          
+    background-color: #307ad9;
+    color: white;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px black;
+    text-shadow: 2px 2px 3px black;
+    text-decoration: none;      
+    cursor: pointer;
+    margin: 0 auto 1rem;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease; 
+}
+
+.sample_pdf:hover, .contact_link:hover {
+    background-color: #055ac8;
 }
 
 .homeownerForm {
@@ -494,6 +527,11 @@ video {
     justify-content: center;
 }
 
+.reviews_container {
+    background: #1e2748;
+    padding: 2rem 0;
+}
+
 .reviewImage { 
     position: relative;
     width: 100%;
@@ -521,7 +559,7 @@ video {
     text-shadow: 2px 2px 10px black;
     text-align: left;
     box-shadow: 2px 2px 10px black;
-    margin: 0 auto;
+    margin: 0 auto 3rem;
 }
 
 input:focus, textarea:focus, select:focus {
@@ -545,8 +583,8 @@ input:focus, textarea:focus, select:focus {
 
 .reviews_h2 {
     text-align: center; 
-    color: #1e2748;
-    text-shadow: 1.3px 1.3px 3px #307ad9;
+    color: white;
+    text-shadow: 3px 3px 3px #307ad9;
     font-size: 2.5rem;
 }
 .current_reviews {
@@ -558,7 +596,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .review_card {
-    background: rgb(242, 241, 241);
+    background: white;
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 2px 3px 8px black;
@@ -600,7 +638,7 @@ input:focus, textarea:focus, select:focus {
     margin: 40px auto 25px auto;
     padding: 25px 20px;
     max-width: 420px;
-    background: linear-gradient(160deg,#1e2748 10%, #307ad9 50%);;
+    background: #307ad9;
     border-radius: 12px;
     box-shadow: 10px 10px 15px black;
     line-height: 1.6;
@@ -803,6 +841,7 @@ input:focus, textarea:focus, select:focus {
 .aboutHeader h1 {
     font-size: 2.8rem;
     margin: 0;
+    text-shadow: 2px 2px 2px black;
 }
 
 .aboutHeader p {
@@ -848,6 +887,7 @@ input:focus, textarea:focus, select:focus {
 .actionCall h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 2px black;
 }
 
 .actionCall a, .service_call a {
@@ -910,6 +950,11 @@ input:focus, textarea:focus, select:focus {
     font-size:2.5rem; 
     margin-bottom:20px; 
     color:#1a3e59;
+    text-shadow: 1px 1px 2px #307ad9;
+}
+
+.aboutContent h1 .highlight {
+    text-shadow: 2px 2px 2px black;
 }
     
 .aboutContent p {
@@ -951,10 +996,8 @@ input:focus, textarea:focus, select:focus {
     box-shadow: 5px 5px 10px black;
 }
     
-.feature-Box h3 {
-    color:#307ad9; 
-    margin-bottom:10px; 
-    font-size:1.15rem;
+.featureBox h3 {
+    text-shadow: 2px 2px 2px black;
 }
 
 .loadMore {
@@ -1057,9 +1100,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .service_nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+    display: none;
     justify-content: center;
     padding: 20px;
     margin-bottom: 30px;
@@ -1078,4 +1119,8 @@ input:focus, textarea:focus, select:focus {
 
 .service_nav a:hover {
     background: #dbe6ff;
+}
+
+.service_select {
+    display: none;
 }
