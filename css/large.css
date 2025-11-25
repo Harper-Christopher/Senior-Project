@@ -360,5 +360,18 @@
         background: #1161cb;
     }
 
+    /* Contact Page */
+    .contact_container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .contact_right {
+        width: 60%;
+    }
+
+    .contact_left {
+        width: 40%;
+    }
 
 }   

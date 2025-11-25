@@ -1130,3 +1130,64 @@ input:focus, textarea:focus, select:focus {
 .back_to_top {
     display: none;
 }
+
+/* Contact Page */
+.homeownerForm p {
+    text-align: center;
+}
+
+.contact_container {
+    display: block;
+    margin: 2rem auto;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.contact_right, .contact_left {
+    background: #ffffff;
+    padding: 1rem;
+    margin: 2rem 0 1rem;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px black;
+    animation: fadeUp 0.8s ease forwards;
+}
+
+contact_left h2 {
+    font-size: 1px;
+}
+
+.contact_top {
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    padding: 3rem 1rem 2rem;
+    background: linear-gradient(135deg, #1e2748, #307ad9);
+    animation: fadeUp 0.7s ease forwards;
+}
+
+.contact_top h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    color: white;
+}
+
+.contact_top p {
+    margin-top: .5rem;
+    color: white;
+}
+
+.smallMuted {
+    color: #6b7280;
+    font-size: .9rem;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0; 
+        translateY: (18px);
+    }
+
+    to {
+        opacity: 1; 
+        translateY: (0);
+    }
+}
