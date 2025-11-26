@@ -374,4 +374,36 @@
         width: 40%;
     }
 
+    .contact_right {
+        animation: fadeLeft 1.2s ease;
+    }
+
+    .contact_left {
+        animation: fadeRight 1.2s ease;
+    }
+
+    @keyframes fadeRight {
+        from {
+            opacity: 0;
+            transform: translateX(-18px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes fadeLeft {
+        from {
+            opacity: 0;
+            transform: translateX(18px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
 }   
