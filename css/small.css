@@ -165,12 +165,28 @@ ul {
     border-radius: 25px;
 }
 
-video {
+/* video {
     max-width: 100%;
     height: auto;
     display: block;
     margin-bottom: -2px;
     margin-left: -.5%;
+} */
+
+.video_container {
+    overflow: hidden;
+}
+
+video {
+    display: block;        
+    width: 100vw;         
+    height: auto;
+    max-width: none;       
+    margin: 0;
+    padding: 0;
+    border: none;
+    vertical-align: top;   
+    transform: scale(1.01)
 }
 
 .imageContainer {
@@ -1210,7 +1226,6 @@ input:focus, textarea:focus, select:focus {
 .contact_home {
     width: 100%;
     border-radius: 15px;
-    margin: 2rem 0;
     box-shadow: 2px 4px 15px black;
 }
 
@@ -1220,6 +1235,11 @@ input:focus, textarea:focus, select:focus {
 
 .faq_question {
     font-weight: bold;
+    font-size: 1rem;
+}
+
+.contact_number {
+    color: #307ad9;
 }
 
 
