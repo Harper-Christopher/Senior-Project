@@ -251,6 +251,7 @@ video {
 .realtorImageBox img, .homeownerImageBox img {
     display: block;
     max-width: 100%;
+    max-height: 434px;
     margin: 1rem;
     border-radius: 15px;
 }
@@ -1075,12 +1076,12 @@ input:focus, textarea:focus, select:focus {
     box-shadow: 2px 2px 4px black;
 }
 
-.service_image {
+.service_image, .contact_image {
     height: 300px; 
     overflow: hidden;
 }
 
-.service_image img {
+.service_image img, .contact_image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1144,7 +1145,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .contact_right, .contact_left {
-    background: #ffffff;
+    background: white;
     padding: 1rem;
     margin: 2rem 0 1rem;
     border-radius: 15px;
@@ -1152,8 +1153,22 @@ input:focus, textarea:focus, select:focus {
     animation: fadeUp 0.8s ease forwards;
 }
 
-contact_left h2 {
-    font-size: 1px;
+.contact_right {
+    animation: fadeLeft 1.2s ease;
+}
+
+.contact_left {
+    animation: fadeRight 1.2s ease;
+}
+
+.contact_left h1 {
+    color: #307ad9;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+.contact_left p {
+    margin: .3rem;
 }
 
 .contact_top {
@@ -1161,7 +1176,7 @@ contact_left h2 {
     text-shadow: 2px 2px 5px black;
     padding: 3rem 1rem 2rem;
     background: linear-gradient(135deg, #1e2748, #307ad9);
-    animation: fadeUp 0.7s ease forwards;
+    animation: fadeInDown 1.2s ease;
 }
 
 .contact_top h1 {
@@ -1175,19 +1190,69 @@ contact_left h2 {
     color: white;
 }
 
-.smallMuted {
-    color: #6b7280;
-    font-size: .9rem;
-}
-
 @keyframes fadeUp {
     from {
         opacity: 0; 
-        translateY: (18px);
+        transform: translateY(18px);
     }
 
     to {
         opacity: 1; 
-        translateY: (0);
+        transform: translateY(0);
     }
 }
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(-18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.homeownerForm button {
+    display: block;
+    background: red;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px black;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px black;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin: 1rem auto;
+}
+
+.contact_home {
+    width: 100%;
+    border-radius: 15px;
+    margin: 2rem 0;
+    box-shadow: 2px 4px 15px black;
+}
+
+.faq {
+    margin: 1.3rem;
+}
+
+.faq_question {
+    font-weight: bold;
+}
+
+
